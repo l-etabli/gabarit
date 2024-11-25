@@ -3,8 +3,11 @@
   "module": "src/index.ts",
   "type": "module",
   "scripts": {
+    "test": "bun test",
     "check": "biome check",
-    "check:fix": "biome check --fix"
+    "check:fix": "biome check --fix",
+    "typecheck": "tsc --noEmit",
+    "fullcheck": "bun run check && bun run typecheck && bun run test"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
