@@ -1,15 +1,13 @@
-# forge/base
+# l-etabli/gabarit
 
-To install dependencies:
+This project is a template for creating typscript libraries.
 
-```bash
-bun install
-```
+It uses :
 
-To run:
-
-```bash
-bun run index.ts
-```
-
-This project was created using `bun init` in bun v1.1.36. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+- Typescript for type checking
+- Bun for running tests
+- Bun as a package manager
+- Biome as a formatter
+- Biome as a linter
+- Lefthook for pre-commit hooks
+- GitHub Actions for CI, which will run typecheck, format, lint, test and than deploy the package to npm
