@@ -1,0 +1,14 @@
+{
+  "name": "@letabli/gabarit",
+  "module": "src/index.ts",
+  "type": "module",
+  "scripts": {
+    "check": "biome check",
+    "check:fix": "biome check --fix"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@types/bun": "latest",
+    "typescript": "^5.7.2"
+  }
+}
