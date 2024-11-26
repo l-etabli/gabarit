@@ -4,9 +4,10 @@
   "type": "module",
   "version": "0.0.0",
   "scripts": {
-    "test": "bun test",
+    "build": "rm -rf dist && tsc --project tsconfig.build.json",
     "check": "biome check",
     "check:fix": "biome check --fix --no-errors-on-unmatched --files-ignore-unknown=true",
+    "test": "bun test",
     "typecheck": "tsc --noEmit",
     "fullcheck": "bun run check && bun run typecheck && bun run test"
   },
