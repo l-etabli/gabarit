@@ -9,9 +9,7 @@
     "moduleResolution": "bundler",
     "strict": true,
     "skipLibCheck": true,
-    "noFallthroughCasesInSwitch": true,
-    "sourceMap": true,
-    "declarationMap": true
+    "noFallthroughCasesInSwitch": true
   },
   "exclude": ["./src/**/*.test.ts", "node_modules"]
 }
