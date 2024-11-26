@@ -60,8 +60,6 @@ jobs:
           else
             echo "No version upgrade. Latest is ${{ steps.npm-latest.outputs.version }}"
           fi
-        
-       
 
   create-tag:
     name: Create version tag
