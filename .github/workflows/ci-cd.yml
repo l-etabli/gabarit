@@ -49,7 +49,7 @@ jobs:
 
       - name: Read latest version on npm
         id: npm-latest
-        run: echo "version=$(npm view @l-etabli/gabarit version)" >> $GITHUB_OUTPUT
+        run: echo "version=$(npm view @${{ npm_scope }}/${{ project_name }} version)" >> $GITHUB_OUTPUT
       
       - name: Check if version upgraded and set output to version if so
         id: check-if-version-upgraded
@@ -106,7 +106,7 @@ jobs:
         with:
           node-version: '22'
           registry-url: 'https://registry.npmjs.org'
-          scope: '@l-etabli'
+          scope: '@${{ npm_scope }}'
 
       - name: Verify NPM access
         run: npm whoami

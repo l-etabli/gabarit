@@ -1,5 +1,6 @@
 {
-  "name": "@l-etabli/gabarit",
+  "name": "@${{ npm_scope }}/${{ project_name }}",
+  "description": "${{ project_description }}",
   "module": "src/index.ts",
   "type": "module",
   "version": "0.0.9",
@@ -8,11 +9,11 @@
   "files": ["dist", "src", "LICENSE", "README.md"],
   "repository": {
     "type": "git",
-    "url": "https://github.com/l-etabli/gabarit.git"
+    "url": "https://github.com/${{ npm_scope }}/${{ project_name }}.git"
   },
-  "homepage": "https://github.com/l-etabli/gabarit#readme",
+  "homepage": "https://github.com/${{ npm_scope }}/${{ project_name }}#readme",
   "bugs": {
-    "url": "https://github.com/l-etabli/gabarit/issues"
+    "url": "https://github.com/${{ npm_scope }}/${{ project_name }}/issues"
   },
   "scripts": {
     "build": "tsup --config tsup.config.ts",
