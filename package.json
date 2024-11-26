@@ -3,6 +3,9 @@
   "module": "src/index.ts",
   "type": "module",
   "version": "0.0.0",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": ["dist/*.js", "dist/*.d.ts", "src", "LICENSE", "README.md"],
   "scripts": {
     "build": "rm -rf dist && tsc --project tsconfig.build.json",
     "check": "biome check",
