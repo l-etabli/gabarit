@@ -15,7 +15,7 @@
     "url": "https://github.com/l-etabli/gabarit/issues"
   },
   "scripts": {
-    "build": "rm -rf dist && tsc --project tsconfig.build.json",
+    "build": "tsup --config tsup.config.ts",
     "check": "biome check",
     "check:fix": "biome check --fix --no-errors-on-unmatched --files-ignore-unknown=true",
     "test": "bun test",
@@ -26,6 +26,7 @@
     "@biomejs/biome": "^1.9.4",
     "@types/bun": "latest",
     "lefthook": "^1.8.4",
+    "tsup": "^8.3.5",
     "typescript": "^5.7.2"
   },
   "exports": {

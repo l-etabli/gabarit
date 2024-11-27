@@ -1,5 +1,5 @@
 import { describe, expect, it } from "bun:test";
-import { add } from "./add";
+import { add } from "../src";
 
 describe("add", () => {
   it("should add two numbers", () => {
