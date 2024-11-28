@@ -3,7 +3,7 @@
   "module": "src/index.ts",
   "type": "module",
   "version": "0.0.8",
-  "main": "./dist/index.js",
+  "main": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "files": ["dist", "src", "LICENSE", "README.md"],
   "repository": {
@@ -32,7 +32,7 @@
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "import": "./dist/index.js",
+      "import": "./dist/index.mjs",
       "require": "./dist/index.cjs"
     }
   }
