@@ -10,7 +10,15 @@
   "organizeImports": { "enabled": true },
   "linter": {
     "enabled": true,
-    "rules": { "recommended": true }
+    "rules": {
+      "recommended": true,
+      "performance": {
+        "noAccumulatingSpread": "off"
+      },
+      "correctness": {
+        "noUnusedVariables": "error"
+      }
+    }
   },
   "javascript": { "formatter": { "quoteStyle": "double" } }
 }
