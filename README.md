@@ -1,4 +1,4 @@
-# l-etabli/gabarit
+# ${{ npm_scope }}/${{ project_name }}
 
 This project is a template for creating typscript libraries.
 
