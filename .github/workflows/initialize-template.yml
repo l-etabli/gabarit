@@ -7,6 +7,7 @@ on:
 
 jobs:
   template_initialization:
+    name: Template initialization
     runs-on: ubuntu-latest
     if: ${{ github.event.created && github.repository != 'l-etabli/gabarit' }}
     steps:
@@ -14,6 +15,8 @@ jobs:
       uses: cschleiden/replace-tokens@v1
       with: 
         files: '["README.md","package.json","LICENSE","ci-cd.yml"]'
+        tokenPrefix: '#{{'
+        tokenSuffix: '}}'
       env:
         project_name: ${{ github.event.repository.name }}
         npm_scope: ${{ github.repository_owner }}
