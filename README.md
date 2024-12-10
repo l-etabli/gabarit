@@ -1,4 +1,4 @@
-# ${{ npm_scope }}/${{ project_name }}
+# #{{ npm_scope }}/#{{ project_name }}
 
 This project is a template for creating typscript libraries.
 
