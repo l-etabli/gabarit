@@ -3,6 +3,7 @@
   "extends": ["config:recommended", "customManagers:biomeVersions"],
   "baseBranches": ["main"],
   "labels": ["dependencies"],
+  "dependencyDashboard": true,
   "packageRules": [
     {
       "matchUpdateTypes": ["minor", "patch"],
