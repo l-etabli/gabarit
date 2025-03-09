@@ -3,7 +3,7 @@
   "description": "#{project_description}#",
   "module": "src/index.ts",
   "type": "module",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "main": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "files": ["dist", "src", "LICENSE", "README.md"],
