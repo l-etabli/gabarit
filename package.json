@@ -24,7 +24,7 @@
     "fullcheck": "bun run check && bun run typecheck && bun run test"
   },
   "devDependencies": {
-    "@biomejs/biome": "^1.9.4",
+    "@biomejs/biome": "^2.1.4",
     "@types/bun": "latest",
     "lefthook": "^1.12.2",
     "tsup": "^8.5.0",
