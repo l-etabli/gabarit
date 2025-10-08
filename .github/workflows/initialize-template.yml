@@ -14,7 +14,7 @@ jobs:
     if: ${{ github.event.created && github.repository != 'l-etabli/gabarit' }}
     steps:
     - uses: actions/checkout@v5
-    - name: Replace tokens in README.MD, LICENSE, package.json and ci-cd.yml
+    - name: Replace tokens in README.MD, LICENSE and package.json
       uses: cschleiden/replace-tokens@v1
       with: 
         files: '["README.md", "package.json", "LICENSE"]'

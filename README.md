@@ -1,5 +1,8 @@
 # #{npm_scope}#/#{project_name}#
 
+${project_description}
+
+
 This project is a template for creating typscript libraries.
 
 It uses :
