@@ -1,5 +1,5 @@
 import * as fs from "node:fs";
-import { type Options, defineConfig } from "tsup";
+import { defineConfig, type Options } from "tsup";
 
 type Plugin = NonNullable<Options["esbuildPlugins"]>[number];
 
