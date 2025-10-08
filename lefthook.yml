@@ -9,4 +9,9 @@ pre-push:
   commands:
     fullcheck:
       run: bun run fullcheck
+
+commit-msg:
+  commands:
+    commitlint:
+      run: bun x commitlint --edit {1}
       
