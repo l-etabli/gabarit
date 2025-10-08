@@ -3,7 +3,7 @@
   "description": "#{project_description}#",
   "module": "src/index.ts",
   "type": "module",
-  "version": "0.0.14",
+  "version": "0.0.0-development",
   "main": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "files": [
@@ -26,7 +26,8 @@
     "check:fix": "biome check --fix --no-errors-on-unmatched --files-ignore-unknown=true",
     "test": "bun test",
     "typecheck": "tsc --noEmit",
-    "fullcheck": "bun run check && bun run typecheck && bun run test"
+    "fullcheck": "bun run check && bun run typecheck && bun run test",
+    "release": "semantic-release"
   },
   "devDependencies": {
     "@commitlint/cli": "^20.1.0",
@@ -34,6 +35,7 @@
     "@biomejs/biome": "^2.2.5",
     "@types/bun": "latest",
     "lefthook": "^1.13.6",
+    "semantic-release": "^23.1.1",
     "tsup": "^8.5.0",
     "typescript": "^5.9.3"
   },
