@@ -1,9 +1,9 @@
 # #{npm_scope}#/#{project_name}#
 
-${project_description}
+#{project_description}#
 
 
-This project is a template for creating typscript libraries.
+This project is a template for creating TypeScript libraries.
 
 It uses :
 
@@ -13,4 +13,4 @@ It uses :
 - Biome as a formatter
 - Biome as a linter
 - Lefthook for pre-commit hooks
-- GitHub Actions for CI, which will run typecheck, format, lint, test and than deploy the package to npm
+- GitHub Actions for CI, which will run typecheck, format, lint, test and then deploy the package to npm

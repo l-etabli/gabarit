@@ -7,7 +7,8 @@
     "module": "ESNext",
     "moduleDetection": "force",
     // Bundler mode
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
+    "types": ["bun"],
     "allowImportingTsExtensions": true,
     "verbatimModuleSyntax": true,
     "noEmit": true,
@@ -19,5 +20,6 @@
     // "noUnusedLocals": false,
     // "noUnusedParameters": false,
     // "noPropertyAccessFromIndexSignature": false
-  }
+  },
+  "include": ["src", "tests", "tsup.config.ts"]
 }

@@ -7,10 +7,11 @@
     "target": "ESNext",
     "module": "ESNext",
     "moduleDetection": "force",
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
+    "rootDir": "src",
     "strict": true,
     "skipLibCheck": true,
     "noFallthroughCasesInSwitch": true
   },
-  "exclude": ["tests", "node_modules"]
+  "include": ["src"]
 }
