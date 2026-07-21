@@ -28,7 +28,7 @@ jobs:
     name: Release
     runs-on: ubuntu-latest
     needs: validations
-    if: github.ref == 'refs/heads/main'
+    if: github.ref == 'refs/heads/main' && github.repository != 'l-etabli/gabarit'
     permissions:
       contents: write
     steps:
